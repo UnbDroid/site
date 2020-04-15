@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- Créditos:
+Desenvolvedora: https://github.com/valsoares
+Ajuda com tutoriais para estruturação do site: https://www.w3schools.com/
+Mecanismo para aumento de imagens: http://fancyapps.com/fancybox/
+-->
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<!-- ícone que fica do lado da aba onde fica o nome do site -->
+<link rel="icon" type="image/x-icon" href="../imagens/logodroid.png" />
+<title>Equipe DROID</title>
+
+</head>
+
+<style type="text/css">
+
+/* fontes */
+@font-face {
+font-family: droidsans;
+font-style: normal;
+font-weight: normal;
+src: url(../fontes/DroidSans.ttf);
+}
+
+@font-face {
+font-family: droidsansbold;
+font-style:normal;
+font-weight:bold;
+src: url(../fontes/DroidSans-Bold.ttf);
+}
+
+/*negrito, italico, sublinhado, riscado e paragrafo*/
+b, strong 	{color: #A20606;}
+i, em 		{color: #333333;}
+u   		{color: #333333; border-bottom: 1px solid #A20606;}
+s, strike 	{color: #333333;}
+p {padding-top: 30px; padding-bottom: 30px}
+
+/* plano de fundo */
+body {
+	  background-color: #fff;
+		color:#000;
+		font-size: 16px;
+		font-family: droidsans;
+		text-align:left;
+		letter-spacing:0px;
+		margin:0;
+	}
+
+/* Rodape */
+
+.rodape {
+	color: #fff;
+	font-size: 6vw;
+	background-color: #000;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	position:fixed;
+	box-sizing: border-box;
+	display:none;
+}
+
+p.rodape {
+	padding: 1% 10% 1% 10%;
+	line-height: 2;
+	display: block;
+	position: relative;
+}
+
+.rodape.cel {
+	display: block;
+}
+
+/* Textos */
+
+.textos {
+	padding: 5% 5% 15% 7%;
+	font-size: 6vw;
+  text-align: center;
+  line-height: 2;
+}
+
+.textos.cel {
+  display: none;
+}
+
+h1 {margin-bottom: 0.8em;}
+
+h4 {margin-bottom: 0.2em;}
+
+/* Menu */
+
+.menu.cel {
+	background-image: url('../imagens/banner_2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	padding-top: 20%;
+
+}
+
+.menu a {
+	color: #fff;
+	text-align: left;
+	text-decoration: none;
+	font: droidsansbold;
+	font-size: 7vw;
+	font-weight: bold;
+	letter-spacing:5px;
+	line-height: 2.5;
+	cursor: pointer;
+	padding-left: 10%;
+	display: none;
+}
+
+.menu a.icon{
+	background: #9F1A1A;
+	background-image: url('../imagens/list.png');
+	background-size: 13%;
+	background-position: 10% 50%;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.menu.cel a.icon{
+	display: none;
+}
+
+.menu.cel a {
+	display: block;
+}
+
+.logo-menu {
+	width:35%;
+	margin-left: 60%;
+	margin-top:2%;
+}
+
+/* Setas */
+
+.prev {
+	width:13%;
+	left: 10%;
+	position: absolute;
+	padding-bottom:10%;
+	transform: translateY(150%);
+	opacity: .5;
+}
+
+/* Fotos */
+
+.pequeno {
+	width:300px;
+	height:300px;
+	margin-right: 3%;
+}
+
+
+</style>
+
+<body>
+
+<div id="pag">
+	<div class="menu" id="meumenu">
+
+			<a href="javascript:void(0);" class="icon" onclick="menu()">
+				<img src="../imagens/logodroid.png" class="logo-menu">
+			</a>
+
+			<a href="qs.html" title="Somos a DROID" >QUEM SOMOS</a>
+			<a href="histo.html" title="Passos da equipe" >HISTÓRICO</a>
+			<a href="coo.html" title="Organização interna" >COORDENADORIAS</a>
+			<a href="pat.html" title="Quem nos apoia" >PATROCINADORES</a>
+			<a href="foto.html" title="Momentos da equipe" >GALERIA</a>
+
+			<div class="rodape" id="meurodape">
+				<p class="rodape">
+					Telefone: (61)984590048 </br>
+					ULEG - UNB</br>
+					droid@droidunb.com </br>
+				</p>
+			</div>
+	</div>
+
+  <div class="textos" id="meutexto">
+  <h1><center>Galeria</center></h1>
+
+	<a id="galeria" href="../imagens/recep_1.JPG">
+		<img src="../imagens/recep_1.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2013_1.JPG">
+  	<img src="../imagens/larc2013_1.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2015_1.jpg">
+  	<img src="../imagens/larc2015_1.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2016_1.jpg">
+  	<img src="../imagens/larc2016_1.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2016_2.jpg">
+		<img src="../imagens/larc2016_2.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/robogames2017_1.jpg">
+		<img src="../imagens/robogames2017_1.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/robogames2017_2.jpg">
+		<img src="../imagens/robogames2017_2.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/robogames2017_3.jpg">
+		<img src="../imagens/robogames2017_3.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2017_1.JPG">
+		<img src="../imagens/larc2017_1.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2017_2.JPG">
+		<img src="../imagens/larc2017_2.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2017_3.JPG">
+		<img src="../imagens/larc2017_3.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/balancer_1.JPG">
+		<img src="../imagens/balancer_1.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/balancer_2.JPG">
+		<img src="../imagens/balancer_2.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/balancer_3.JPG">
+		<img src="../imagens/balancer_3.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/balancer_4.JPG">
+		<img src="../imagens/balancer_4.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_1.JPG">
+		<img src="../imagens/larc2018_1.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_2.JPG">
+		<img src="../imagens/larc2018_2.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_3.JPG">
+		<img src="../imagens/larc2018_3.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_4.JPG">
+		<img src="../imagens/larc2018_4.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_5.JPG">
+		<img src="../imagens/larc2018_5.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_6.JPG">
+		<img src="../imagens/larc2018_6.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/larc2018_7.JPG">
+		<img src="../imagens/larc2018_7.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/ff2019_1.JPG">
+		<img src="../imagens/ff2019_1.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/ff2019_2.JPG">
+		<img src="../imagens/ff2019_2.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/ff2019_3.JPG">
+		<img src="../imagens/ff2019_3.JPG" class="pequeno"></a>
+	<a id="galeria" href="../imagens/trufes2019_1.jpg">
+		<img src="../imagens/trufes2019_1.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/trufes2019_2.jpg">
+		<img src="../imagens/trufes2019_2.jpg" class="pequeno"></a>
+	<a id="galeria" href="../imagens/trufes2019_3.jpg">
+		<img src="../imagens/trufes2019_3.jpg" class="pequeno"></a>
+
+
+	<a href="pat.html" title="Quem nos apoia">
+		<img class="prev" src="../imagens/left.png">
+	</a>
+
+  </div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="../fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+<script type="text/javascript">
+
+window.onresize = function() {
+	var desktopUrl = '../index.html';
+	redi_width = 1024;
+    if(window.innerWidth > redi_width) {
+        window.location.replace(desktopUrl);
+    }
+};
+
+$(document).ready(function() {
+  $("#galeria").fancybox({
+		openEffect: 'elastic',
+    closeEffect: 'none'
+	});
+});
+
+function menu() {
+  var x = document.getElementById("meumenu");
+	var y = document.getElementById("meurodape");
+  var z = document.getElementById("meutexto");
+  if (x.className === "menu") {
+    x.className += " cel";
+		y.className += " cel";
+    z.className += " cel";
+  } else {
+    x.className = "menu";
+		y.className = "rodape";
+    z.className = "textos";
+  }
+}
+
+
+</script>
+
+</html>
